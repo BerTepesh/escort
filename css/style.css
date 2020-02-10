@@ -1,0 +1,23 @@
+/*
+Theme Name: B2B Builder
+Description: Тема разработана маркетинговым агентством B2B-Creative
+Version: 1.0
+Data: 12.11.2019
+Author: D.EGOROV
+Author URI: https://b2b-creative.ru
+*/
+
+/*@import  url('css/custom.css');
+@import  url('css/front-page.css');*/
+
+:root {
+  --dark: #212529;
+  --light: #edf3f9;
+  --gray: #82727a;
+  --gray-text: hsl(0, 0%, 40%);
+  --color: #df2c81;
+  --color2: #9b379e;
+  --color-light: rgba(223, 44, 129, 0.2);
+  --gradient: linear-gradient(45deg, #9b379e, #ed2b7c);
+  --accent: #ffe9a9;
+}
