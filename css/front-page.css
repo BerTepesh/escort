@@ -874,6 +874,19 @@ h2 span {
   margin-bottom: 15.8889rem;
 }
 
+.catalog-form__shadow {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  right: 100px;
+  margin: 0 auto;
+  height: 76px;
+  max-width: 905px;
+  opacity: .2;
+  box-shadow: 0 7px 50px 0 #CB6135;
+  width: calc(100% - 200px);
+}
+
 .catalog-form__holder {
   position: relative;
   background: url(../i/form-back.jpg) no-repeat;
