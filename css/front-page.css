@@ -1261,6 +1261,21 @@ h2 span {
 .catalog-form2__holder {
   max-width: 59.8889rem;
   margin: 0 auto;
+  position: relative;
+}
+
+.catalog-form2__holder:before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: 85%;
+  background: url(../i/form/5.png) no-repeat;
+  background-size: cover;
+  width: 686px;
+  height: 690px;
+  z-index: 3;
+  transform: scale(-1, 1);
+  pointer-events: none;
 }
 
 .catalog-form2 h2 {
@@ -1362,6 +1377,65 @@ h2 span {
 .steps .row {
   -ms-flex-align: start;
       align-items: flex-start;
+}
+
+.steps h2 span {
+  position: relative;
+}
+
+.steps h2 span:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: 95%;
+  background: url(../i/steps/4.png) no-repeat;
+  background-size: cover;
+  width: 198px;
+  height: 203px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.steps h2 span:after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 95%;
+  background: url(../i/steps/5.png) no-repeat;
+  background-size: cover;
+  width: 58px;
+  height: 53px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.steps__illustr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.steps__illustr:before {
+  content: '';
+  position: absolute;
+  background: url(../i/steps/6.png) no-repeat;
+  width: 278px;
+  height: 273px;
+  right: 92%;
+  bottom: 25%;
+}
+
+.steps__illustr:after {
+  content: '';
+  position: absolute;
+  background: url(../i/steps/7.png) no-repeat;
+  width: 359px;
+  height: 375px;
+  left: 92%;
+  top: 8%;
 }
 
 .steps__holder {
@@ -1904,6 +1978,14 @@ h2 span {
 
   .circled:before {
     width: 80vw;
+  }
+
+  .steps h2 span:before {
+    right: 80%;
+  }
+
+  .steps h2 span:after {
+    left: 80%;
   }
 }
 
