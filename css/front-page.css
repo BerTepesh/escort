@@ -1108,12 +1108,23 @@ h2 span {
 }
 
 .catalog-form2 {
-  padding-bottom: 10.8889rem;
   padding-top: 3rem;
-  background: url(../i/form/2.jpg) no-repeat;
-  background-position: center bottom;
+  padding-bottom: 10.8889rem;
+  background: url(../i/form/2.jpg) repeat-x;
+  background-position: left bottom;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0;
+}
+
+.catalog-form2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #181518 0%, rgba(24, 21, 24, 0) 30%, rgba(24, 21, 24, 0) 70%, #181518 100%);
 }
 
 .catalog-form2__back {
@@ -1122,6 +1133,7 @@ h2 span {
   width: 100%;
   margin-left: -220px;
   bottom: -70px;
+  max-width: 1750px;
 }
 
 .catalog-form2__back img {
@@ -1132,6 +1144,62 @@ h2 span {
   right: 1rem;
   bottom: 0.5rem;
   z-index: 10;
+}
+
+.steps {
+  padding-top: 5.8333rem;
+  padding-bottom: 6.2222rem;
+  background: #181518 url(../i/steps/back.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin-top: 0;
+}
+
+.steps .row {
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.steps__holder {
+  margin-bottom: 4.4444rem;
+}
+
+.steps__item {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto 40px;
+}
+
+.steps__num {
+  font: 2.3333rem/3.0556rem 'Yeseva One', sans-serif;
+}
+
+.steps__img {
+  height: 200px;
+  max-height: 250px;
+  position: relative;
+}
+
+.steps__img img {
+  margin-top: -40px;
+  width: 80%;
+  max-height: 9999px;
+}
+
+.steps__name {
+  color: #E7B76B;
+  font-weight: 600;
+  font-size: 1.1111rem;
+  line-height: 1.4444rem;
+  margin-bottom: 1.3333rem;
+}
+
+.steps__text {
+  text-align: left;
+}
+
+.steps__btn {
+  text-align: center;
 }
 
 /*
@@ -1268,6 +1336,25 @@ h2 span {
     right: auto;
     bottom: 6rem;
   }
+
+  .steps__holder {
+    background: url(../i/steps/line.svg) no-repeat;
+    background-position: center 100px;
+    background-size: 70%;
+  }
+
+  .steps__item {
+    margin-bottom: 0;
+  }
+
+  .steps__img {
+    height: 20vw;
+  }
+
+  .steps__img img {
+    width: 100%;
+    margin-top: -20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1335,6 +1422,15 @@ h2 span {
   .catalog-form2__back {
     margin-left: -400px;
     bottom: -180px;
+  }
+
+  .steps__num {
+    font-size: 3.3333rem;
+    line-height: 4.0556rem;
+  }
+
+  .steps__img img {
+    margin-top: -50px;
   }
 }
 
