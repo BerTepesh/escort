@@ -299,6 +299,12 @@ h2 span {
   margin-right: 1.0556rem;
 }
 
+.form .form-phone__title {
+  text-align: center;
+  font-size: 1.0778rem;
+  line-height: 1.2556rem;
+}
+
 .form .form-group {
   margin-bottom: 1.8333rem;
   border-radius: 30px;
@@ -903,6 +909,7 @@ h2 span {
   width: 80%;
   max-width: 1285px;
   z-index: 3;
+  pointer-events: none;
 }
 
 .catalog-form__img img {
@@ -911,7 +918,7 @@ h2 span {
 }
 
 .catalog-form_right {
-  margin-bottom: 4.3889rem;
+  margin-bottom: 8.3889rem;
 }
 
 .catalog-form_right h2 {
@@ -920,8 +927,8 @@ h2 span {
 }
 
 .catalog-form_right h3 {
-  font-size: 1.8889rem;
-  line-height: 2.2222rem;
+  font-size: 1.2889rem;
+  line-height: 1.6222rem;
   text-align: center;
   margin: 0 0 3.0556rem;
   font-weight: normal;
@@ -929,21 +936,30 @@ h2 span {
 
 .catalog-form_right .catalog-form__holder {
   max-width: 72.2222rem;
+  padding-bottom: 40vw;
+  padding-top: 4.1111rem;
 }
 
 .catalog-form_right .form {
-  margin: 0 3rem 0 auto !important;
+  margin: 0 !important;
   z-index: 999;
   position: relative;
+  max-width: 21.3889rem;
+}
+
+.catalog-form_right .form_block {
+  max-width: 18.1111rem;
 }
 
 .catalog-form_right .catalog-form__img {
   bottom: 0;
   top: auto;
-  left: auto;
-  right: 50%;
-  margin-right: -400px;
   z-index: 1;
+  max-width: 976px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 44vw;
 }
 
 .catalog-form_right .catalog-form__subtitle {
@@ -952,12 +968,26 @@ h2 span {
   line-height: 1.7778rem;
 }
 
+.catalog-form_right .catalog-form__text {
+  margin-bottom: 1.9444rem;
+}
+
 .catalog-form_right .catalog-form__text p {
   margin-bottom: 1.1111rem;
   margin-top: 0;
   font-size: 1.3333rem;
   line-height: 1.7778rem;
   color: #D0CFD0;
+}
+
+.catalog-form_right .catalog-form__star {
+  left: 0;
+}
+
+.catalog-form_right .catalog-form__star-holder {
+  max-width: 1472px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .catalog-form .form {
@@ -1008,8 +1038,7 @@ h2 span {
 }
 
 .star span {
-  font-size: 2.5rem;
-  line-height: 3.0556rem;
+  font: 2.5rem/3.0556rem 'Yeseva One', sans-serif;
   display: block;
 }
 
@@ -1493,6 +1522,12 @@ h2 span {
     margin-left: -20px;
   }
 
+  .catalog-form_right .catalog-form__star {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
   .catalog-form .form {
     margin: 0;
   }
@@ -1576,6 +1611,11 @@ h2 span {
     line-height: 1.5556rem;
   }
 
+  .form .form-phone__title {
+    font-size: 1.2778rem;
+    line-height: 1.5556rem;
+  }
+
   .ham-menu-trigger-wrap {
     display: none;
   }
@@ -1609,6 +1649,45 @@ h2 span {
     top: 150px;
     width: 60%;
     margin-left: -50px;
+  }
+
+  .catalog-form_right {
+    margin-bottom: 4.3889rem;
+  }
+
+  .catalog-form_right h3 {
+    font-size: 1.8889rem;
+    line-height: 2.2222rem;
+  }
+
+  .catalog-form_right .catalog-form__holder {
+    padding-bottom: 2.5rem;
+  }
+
+  .catalog-form_right .form {
+    margin: 0 3rem 0 auto !important;
+  }
+
+  .catalog-form_right .catalog-form__img {
+    width: 47vw;
+    right: auto;
+    left: 50%;
+    margin-left: -59vw;
+  }
+
+  .catalog-form_right .catalog-form__star {
+    left: 0;
+    margin: 0;
+    width: 14.5556rem;
+    height: 14.5556rem;
+    font-size: 1.2778rem;
+    line-height: 1.8333rem;
+    padding-top: 3.0556rem;
+  }
+
+  .catalog-form_right .catalog-form__star span {
+    font-size: 3.2778rem;
+    line-height: 4rem;
   }
 
   .catalog-form2 h2 {
@@ -1664,6 +1743,11 @@ h2 span {
     margin-left: -250px;
     width: 100%;
     top: 40px;
+  }
+
+  .catalog-form_right .catalog-form__img {
+    width: 55vw;
+    margin-left: -53vw;
   }
 
   .description__img {
@@ -1795,6 +1879,10 @@ h2 span {
 }
 
 @media (min-width: 1920px) {
+  .catalog-form_right .catalog-form__img {
+    margin-left: -900px;
+  }
+
   .requirements__img {
     margin-right: -40vw;
   }
