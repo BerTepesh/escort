@@ -922,6 +922,20 @@ h2 span {
   bottom: -280px;
 }
 
+.catalog-form_right .catalog-form__illustr1 img {
+  left: -320px;
+  right: auto;
+  top: -320px;
+  transform: scale(-1, 1);
+}
+
+.catalog-form_right .catalog-form__illustr2 img {
+  left: auto;
+  right: -390px;
+  bottom: auto;
+  top: 0;
+}
+
 .catalog-form__shadow {
   position: absolute;
   bottom: 0;
@@ -1514,6 +1528,36 @@ h2 span {
   margin-bottom: .5rem;
 }
 
+.requirements__title span {
+  position: relative;
+}
+
+.requirements__title span:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 90%;
+  background: url(../i/requirements/7.png) no-repeat;
+  background-size: cover;
+  width: 353px;
+  height: 268px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.requirements__title span:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 90%;
+  background: url(../i/requirements/8.png) no-repeat;
+  background-size: cover;
+  width: 282px;
+  height: 250px;
+  z-index: 3;
+  pointer-events: none;
+}
+
 .requirements__subtitle {
   font-size: 1.7778rem;
   line-height: 2.2222rem;
@@ -1877,7 +1921,7 @@ h2 span {
   }
 
   .requirements__holder {
-    padding-bottom: 0;
+    padding-bottom: 5vw;
   }
 
   .requirements__holder:after {
@@ -1893,6 +1937,14 @@ h2 span {
 
   .requirements__holder:before {
     right: 0;
+  }
+
+  .requirements__title span:before {
+    right: 80%;
+  }
+
+  .requirements__title span:after {
+    left: 80%;
   }
 
   .requirements__btn-illustr {
@@ -2043,6 +2095,12 @@ h2 span {
 
   .top__holder {
     padding-bottom: 7.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .catalog-form_right .catalog-form__illustr1 img {
+    top: -420px;
   }
 }
 
