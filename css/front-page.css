@@ -44,6 +44,7 @@ html {
   min-height: 100%;
   position: relative;
   font-size: 18px;
+  background: #161214;
 }
 
 body {
@@ -53,8 +54,8 @@ body {
   -ms-flex-direction: column;
       flex-direction: column;
   color: #fff;
-  background: #161214;
   font: 1rem/1.4444rem 'Montserrat', sans-serif;
+  background: #161214;
 }
 
 body,
@@ -84,6 +85,7 @@ h2 span {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .content {
@@ -1646,19 +1648,112 @@ h2 span {
   display: none;
 }
 
+.thanks {
+  position: relative;
+  z-index: 1;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.thanks:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: linear-gradient(0deg, #161214 0%, rgba(22, 18, 20, 0) 10%);
+  z-index: 9;
+}
+
+.thanks__content {
+  max-width: calc(100% - 30vw);
+  -ms-flex: 0 0 calc(100% - 30vw);
+      flex: 0 0 calc(100% - 30vw);
+}
+
 .thanks__holder {
-  height: 100vh;
+  max-height: 560px;
+  position: relative;
+  z-index: 10;
+}
+
+.thanks__holder:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #161214 10%, rgba(22, 18, 20, 0) 40%);
+  z-index: 1;
+}
+
+.thanks__holder:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  background: url(../i/requirements/back.jpg) no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  z-index: -1;
+}
+
+.thanks__holder .row {
+  height: 100%;
 }
 
 .thanks__title {
   margin-bottom: 0.5rem;
-  color: #E7B66B;
-  font: 4.6111rem/7.5rem "Yeseva One", sans-serif;
+  font: 1.6333rem/2.111rem 'Yeseva One', sans-serif;
+  color: #e7b66b;
+  max-width: calc(100% - 100px);
 }
 
 .thanks__subtitle {
-  font-size: 1.7778rem;
-  line-height: 2.3333rem;
+  font-size: 1.0778rem;
+  line-height: 1.4333rem;
+  margin-bottom: 3.6222rem;
+}
+
+.thanks__btn .btn {
+  max-width: 213px;
+}
+
+.thanks__img {
+  position: absolute;
+  bottom: -5rem;
+  margin-right: -58vw;
+  right: 50%;
+  height: 68vw;
+  z-index: 3;
+  max-height: 1090px;
+}
+
+.thanks__img:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #161214 0%, rgba(22, 18, 20, 0) 10%);
+}
+
+.thanks__img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #161214 0%, rgba(22, 18, 20, 0) 20%);
 }
 
 /*
@@ -1838,6 +1933,45 @@ h2 span {
     bottom: 20rem;
     height: 54vw;
   }
+
+  .thanks__content {
+    max-width: calc(100% - 40vw);
+    -ms-flex: 0 0 calc(100% - 40vw);
+        flex: 0 0 calc(100% - 40vw);
+  }
+
+  .thanks__holder {
+    height: 100vh;
+  }
+
+  .thanks__holder:before {
+    top: 0;
+    bottom: auto;
+  }
+
+  .thanks__title {
+    font-size: 2.0333rem;
+    line-height: 2.8111rem;
+  }
+
+  .thanks__subtitle {
+    font-size: 1.2778rem;
+    line-height: 1.7333rem;
+    margin-bottom: 4.2222rem;
+  }
+
+  .thanks__btn {
+    text-align: center;
+  }
+
+  .thanks__btn .btn {
+    max-width: 313px;
+  }
+
+  .thanks__img {
+    margin-right: -52vw;
+    bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2009,6 +2143,24 @@ h2 span {
   .requirements__illustr {
     bottom: 50px;
   }
+
+  .thanks:before {
+    display: block;
+  }
+
+  .thanks__holder:before {
+    top: 0;
+    bottom: auto;
+  }
+
+  .thanks__subtitle {
+    font-size: 1.7778rem;
+    line-height: 2.3333rem;
+  }
+
+  .thanks__img {
+    bottom: -10rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2058,6 +2210,11 @@ h2 span {
 
   .requirements__illustr {
     display: block;
+  }
+
+  .thanks {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -2112,6 +2269,10 @@ h2 span {
 
   .thanks__holder {
     max-height: 560px;
+  }
+
+  .thanks__img {
+    height: 54vw;
   }
 }
 
@@ -2171,8 +2332,27 @@ h2 span {
     padding-bottom: 7.2rem;
   }
 
+  .thanks__content {
+    max-width: 66%;
+    -ms-flex: 0 0 66%;
+        flex: 0 0 66%;
+  }
+
   .thanks__holder {
     max-height: 100%;
+  }
+
+  .thanks__title {
+    font-size: 4.4111rem;
+    line-height: 5.5rem;
+  }
+
+  .thanks__subtitle {
+    margin-bottom: 6.2222rem;
+  }
+
+  .thanks__img {
+    height: 68vw;
   }
 }
 
