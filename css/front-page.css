@@ -704,11 +704,11 @@ h2 span {
 .catalog:after {
   content: '';
   position: absolute;
-  right: -20px;
+  right: -50px;
   width: 9.2222rem;
   height: 9.2889rem;
   top: 4.7778rem;
-  background: url(../i/catalog/3.jpg) no-repeat;
+  background: url(../i/catalog/3.png) no-repeat;
   z-index: 4;
 }
 
@@ -964,7 +964,7 @@ h2 span {
 }
 
 .catalog-form__holder h2 {
-  text-align: left;
+  text-align: center;
   margin-bottom: 1.9556rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1350,8 +1350,8 @@ h2 span {
 .catalog-form2__back {
   position: absolute;
   left: 50%;
-  width: 150%;
-  margin-left: -300px;
+  width: 170%;
+  margin-left: -320px;
   bottom: -130px;
   max-width: 1750px;
 }
@@ -1604,10 +1604,10 @@ h2 span {
 
 .requirements__img {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   margin-right: -52vw;
   right: 50%;
-  height: 56vw;
+  height: 68vw;
   z-index: 3;
   max-height: 1090px;
 }
@@ -1644,6 +1644,21 @@ h2 span {
   right: 48%;
   height: 7vw;
   display: none;
+}
+
+.thanks__holder {
+  height: 100vh;
+}
+
+.thanks__title {
+  margin-bottom: 0.5rem;
+  color: #E7B66B;
+  font: 4.6111rem/7.5rem "Yeseva One", sans-serif;
+}
+
+.thanks__subtitle {
+  font-size: 1.7778rem;
+  line-height: 2.3333rem;
 }
 
 /*
@@ -1712,11 +1727,6 @@ h2 span {
     top: 30px;
   }
 
-  .preface {
-    background-size: cover;
-    background-position: top right;
-  }
-
   .preface__title {
     font-size: 2.0333rem;
     line-height: 2.8111rem;
@@ -1735,6 +1745,7 @@ h2 span {
   .catalog-form__holder h2 {
     font-size: 2.1667rem;
     line-height: 2.56rem;
+    text-align: left;
   }
 
   .catalog-form__holder h2 span {
@@ -1825,6 +1836,7 @@ h2 span {
 
   .requirements__img {
     bottom: 20rem;
+    height: 54vw;
   }
 }
 
@@ -1852,6 +1864,11 @@ h2 span {
 
   .ham-menu-trigger-wrap {
     display: none;
+  }
+
+  .preface {
+    background-size: cover;
+    background-position: top right;
   }
 
   .catalog-form__holder {
@@ -2077,6 +2094,10 @@ h2 span {
     padding: 1.4333rem;
   }
 
+  .catalog:after {
+    right: -20px;
+  }
+
   .circled:before {
     width: 80vw;
   }
@@ -2087,6 +2108,10 @@ h2 span {
 
   .steps h2 span:after {
     left: 80%;
+  }
+
+  .thanks__holder {
+    max-height: 560px;
   }
 }
 
@@ -2144,6 +2169,10 @@ h2 span {
 
   .top__holder {
     padding-bottom: 7.2rem;
+  }
+
+  .thanks__holder {
+    max-height: 100%;
   }
 }
 
