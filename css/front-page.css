@@ -237,13 +237,14 @@ h2 span {
   background: radial-gradient(ellipse at top center, #E7B66B, #DB4E2E);
   box-shadow: 0 0 80px 10px rgba(231, 182, 107, 0.7), inset 0 -1px 1px rgba(255, 255, 255, 0.5);
   color: #fff;
-  padding: 1.7333rem;
+  padding: .7333rem 1.7333rem;
   border-top-left-radius: 20px 45px;
   border-top-right-radius: 20px 45px;
   border-bottom-right-radius: 20px 45px;
   border-bottom-left-radius: 20px 45px;
   font-size: 1.1111rem;
   width: 100%;
+  min-height: 5.2044rem;
   max-width: 313px;
 }
 
@@ -441,8 +442,8 @@ h2 span {
 .preface {
   background-image: url(../i/preface/1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right top;
+  background-size: 200vw;
+  background-position: top 0 right -4rem;
   position: relative;
   overflow: hidden;
   padding: 9.1111rem 0;
@@ -467,12 +468,13 @@ h2 span {
   font: 1.6333rem/2.111rem 'Yeseva One', sans-serif;
   margin-bottom: 3rem;
   color: #e7b66b;
+  max-width: calc(100% - 100px);
 }
 
 .preface__title span {
   display: block;
-  font-size: 2.2889rem;
-  line-height: 2.6rem;
+  font-size: 1.6333rem;
+  line-height: 2.111rem;
   color: #fff;
 }
 
@@ -667,7 +669,8 @@ h2 span {
 .postface__item {
   padding: 2.2667rem 1rem 3.2667rem;
   height: calc(100% - 2.2222rem);
-  margin-bottom: 2.2222rem;
+  max-width: 500px;
+  margin: 0 auto 2.2222rem;
 }
 
 .postface__num {
@@ -703,13 +706,14 @@ h2 span {
   position: absolute;
   right: -20px;
   width: 9.2222rem;
-  height: 8.3889rem;
+  height: 9.2889rem;
   top: 4.7778rem;
   background: url(../i/catalog/3.jpg) no-repeat;
+  z-index: 4;
 }
 
 .catalog__item {
-  height: calc(37.0556rem - 1.7778rem);
+  height: calc(27.0556rem - 1.7778rem);
   margin-bottom: 1.7778rem;
   background-size: cover;
   background-position: center top;
@@ -931,7 +935,7 @@ h2 span {
 
 .catalog-form_right .catalog-form__illustr2 img {
   left: auto;
-  right: -390px;
+  right: -350px;
   bottom: auto;
   top: 0;
 }
@@ -962,16 +966,12 @@ h2 span {
 .catalog-form__holder h2 {
   text-align: left;
   margin-bottom: 1.9556rem;
-  font-size: 2.2667rem;
-  line-height: 2.26rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .catalog-form__holder h2 span {
   font-size: 1.5rem;
-}
-
-.catalog-form_right .catalog-form__holder {
-  background-image: url(../i/form-back2.jpg);
 }
 
 .catalog-form__content {
@@ -1014,20 +1014,23 @@ h2 span {
 }
 
 .catalog-form_right .catalog-form__holder {
-  max-width: 72.2222rem;
   padding-bottom: 40vw;
   padding-top: 4.1111rem;
+  background-image: url(../i/form-back2.jpg);
+  max-width: 500px;
 }
 
 .catalog-form_right .form {
-  margin: 0 !important;
   z-index: 999;
   position: relative;
   max-width: 21.3889rem;
+  margin: 0 auto !important;
 }
 
 .catalog-form_right .form_block {
+  text-align: center;
   max-width: 18.1111rem;
+  margin: 0 auto;
 }
 
 .catalog-form_right .catalog-form__img {
@@ -1206,7 +1209,7 @@ h2 span {
   content: '';
   position: absolute;
   top: 20px;
-  right: 95%;
+  right: 90%;
   background: url(../i/description/2.png) no-repeat;
   width: 143px;
   height: 116px;
@@ -1222,6 +1225,9 @@ h2 span {
 .top__item {
   padding: 4.1667rem 2.2222rem;
   margin-bottom: 2.2222rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top__holder {
@@ -1313,7 +1319,7 @@ h2 span {
 
 .catalog-form2 {
   padding-top: 3rem;
-  padding-bottom: 10.8889rem;
+  padding-bottom: 12.8889rem;
   background: url(../i/form/2.jpg) repeat-x;
   background-position: left bottom;
   position: relative;
@@ -1344,9 +1350,9 @@ h2 span {
 .catalog-form2__back {
   position: absolute;
   left: 50%;
-  width: 100%;
-  margin-left: -220px;
-  bottom: -70px;
+  width: 150%;
+  margin-left: -300px;
+  bottom: -130px;
   max-width: 1750px;
 }
 
@@ -1515,7 +1521,7 @@ h2 span {
   right: -60px;
   margin: 0 auto;
   width: 100%;
-  top: 0;
+  bottom: 0;
   height: 100%;
   background: url(../i/requirements/back.jpg) no-repeat;
   background-size: contain;
@@ -1575,6 +1581,8 @@ h2 span {
   text-align: center;
   max-width: 295px;
   margin: 0 auto 4.6667rem;
+  position: relative;
+  z-index: 5;
 }
 
 .requirements__ico {
@@ -1590,12 +1598,14 @@ h2 span {
 
 .requirements .form {
   margin: 0 auto;
+  position: relative;
+  z-index: 99;
 }
 
 .requirements__img {
   position: absolute;
-  bottom: 0;
-  margin-right: -50vw;
+  bottom: 2rem;
+  margin-right: -52vw;
   right: 50%;
   height: 56vw;
   z-index: 3;
@@ -1609,6 +1619,7 @@ h2 span {
   top: 0;
   width: 100%;
   height: 100%;
+  display: none;
   background: linear-gradient(0deg, #161214 0%, rgba(22, 18, 20, 0) 10%);
 }
 
@@ -1626,11 +1637,11 @@ h2 span {
   position: relative;
 }
 
-.requirements__btn-illustr {
+.requirements__illustr {
   position: absolute;
   z-index: -1;
-  bottom: -4vw;
-  left: 0;
+  bottom: 1rem;
+  right: 48%;
   height: 7vw;
   display: none;
 }
@@ -1701,15 +1712,20 @@ h2 span {
     top: 30px;
   }
 
+  .preface {
+    background-size: cover;
+    background-position: top right;
+  }
+
   .preface__title {
-    font-size: 2.8333rem;
-    line-height: 3.2111rem;
-    margin-bottom: 3.5rem;
+    font-size: 2.0333rem;
+    line-height: 2.8111rem;
+    margin-bottom: 1.5rem;
   }
 
   .preface__title span {
-    font-size: 2.8889rem;
-    line-height: 2.8rem;
+    font-size: 2.2889rem;
+    line-height: 2.6rem;
   }
 
   .catalog-form__holder {
@@ -1717,7 +1733,7 @@ h2 span {
   }
 
   .catalog-form__holder h2 {
-    font-size: 2.5667rem;
+    font-size: 2.1667rem;
     line-height: 2.56rem;
   }
 
@@ -1728,7 +1744,7 @@ h2 span {
   .catalog-form__img {
     left: 50%;
     top: 100px;
-    width: 60%;
+    width: 80%;
     margin-left: -20px;
   }
 
@@ -1767,13 +1783,13 @@ h2 span {
 
   .catalog-form2__back {
     margin-left: -300px;
-    bottom: -120px;
+    bottom: -130px;
   }
 
   .catalog-form2__star {
-    left: 55%;
+    left: 2rem;
     right: auto;
-    bottom: 6rem;
+    bottom: 2rem;
   }
 
   .steps__holder {
@@ -1796,11 +1812,19 @@ h2 span {
   }
 
   .requirements__holder {
-    padding-bottom: 56vw;
+    padding-bottom: 5vw;
+  }
+
+  .requirements__holder:before {
+    bottom: 13rem;
   }
 
   .requirements__item {
     margin-bottom: 6.6667rem;
+  }
+
+  .requirements__img {
+    bottom: 20rem;
   }
 }
 
@@ -1830,17 +1854,6 @@ h2 span {
     display: none;
   }
 
-  .preface__title {
-    font-size: 2.8333rem;
-    line-height: 4.2111rem;
-    margin-bottom: 3.5rem;
-  }
-
-  .preface__title span {
-    font-size: 3.8889rem;
-    line-height: 3.8rem;
-  }
-
   .catalog-form__holder {
     padding: 4.1111rem 5.1667rem;
   }
@@ -1848,16 +1861,17 @@ h2 span {
   .catalog-form__holder h2 {
     line-height: 3.556rem;
     margin-bottom: 1.9556rem;
-    font-size: 3.1667rem;
+    font-size: 2.7667rem;
   }
 
   .catalog-form__holder h2 span {
     font-size: 2.5rem;
+    line-height: 2.8rem;
   }
 
   .catalog-form__img {
     top: 150px;
-    width: 60%;
+    width: 90%;
     margin-left: -50px;
   }
 
@@ -1871,11 +1885,17 @@ h2 span {
   }
 
   .catalog-form_right .catalog-form__holder {
+    max-width: 72.2222rem;
     padding-bottom: 2.5rem;
   }
 
   .catalog-form_right .form {
     margin: 0 3rem 0 auto !important;
+  }
+
+  .catalog-form_right .form_block {
+    margin: 0;
+    text-align: left;
   }
 
   .catalog-form_right .catalog-form__img {
@@ -1910,9 +1930,21 @@ h2 span {
     font-size: 2.5rem;
   }
 
+  .catalog-form2 {
+    padding-bottom: 10.8889rem;
+  }
+
   .catalog-form2__back {
-    margin-left: -400px;
-    bottom: -180px;
+    /* margin-left: -400px;
+      bottom: -180px;*/
+    margin-left: -300px;
+    bottom: -100px;
+  }
+
+  .catalog-form2__star {
+    left: 55%;
+    right: auto;
+    bottom: 6rem;
   }
 
   .steps__num {
@@ -1922,10 +1954,6 @@ h2 span {
 
   .steps__img img {
     margin-top: -50px;
-  }
-
-  .requirements__holder {
-    padding-bottom: 5vw;
   }
 
   .requirements__holder:after {
@@ -1941,6 +1969,8 @@ h2 span {
 
   .requirements__holder:before {
     right: 0;
+    top: 0;
+    bottom: auto;
   }
 
   .requirements__title span:before {
@@ -1951,12 +1981,24 @@ h2 span {
     left: 80%;
   }
 
-  .requirements__btn-illustr {
+  .requirements__img {
+    bottom: 0;
+  }
+
+  .requirements__img:before {
     display: block;
+  }
+
+  .requirements__illustr {
+    bottom: 50px;
   }
 }
 
 @media (min-width: 1024px) {
+  .catalog__item {
+    height: calc(37.0556rem - 1.7778rem);
+  }
+
   .catalog-form__img {
     margin-left: -250px;
     width: 100%;
@@ -1991,6 +2033,15 @@ h2 span {
   .top__img img {
     max-width: 130%;
   }
+
+  .catalog-form2__back {
+    bottom: -120px;
+    margin-left: -400px;
+  }
+
+  .requirements__illustr {
+    display: block;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -2000,12 +2051,6 @@ h2 span {
 
   .preface__holder {
     max-height: 560px;
-  }
-
-  .preface__title {
-    font-size: 2.0333rem;
-    line-height: 2.8111rem;
-    margin-bottom: 1.5rem;
   }
 
   .preface__title span {
