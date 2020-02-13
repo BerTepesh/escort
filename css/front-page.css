@@ -2290,8 +2290,8 @@ h2 span {
   }
 
   .oops__img {
-    bottom: -10rem;
-    height: 72vw;
+    bottom: -12rem;
+    height: 68vw;
   }
 }
 
@@ -2355,6 +2355,7 @@ h2 span {
 
   .oops__img {
     height: 65vw;
+    bottom: -10rem;
   }
 }
 
