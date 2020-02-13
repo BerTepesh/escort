@@ -1756,6 +1756,98 @@ h2 span {
   background: linear-gradient(270deg, #161214 0%, rgba(22, 18, 20, 0) 20%);
 }
 
+.oops {
+  position: relative;
+}
+
+.oops__holder {
+  max-height: 560px;
+  position: relative;
+  z-index: 10;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.oops__holder:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #161214 10%, rgba(22, 18, 20, 0) 40%);
+  z-index: 1;
+}
+
+.oops__holder:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: url(../i/oops/back.jpg) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: -1;
+}
+
+.oops__holder .row {
+  height: 100%;
+}
+
+.oops__content {
+  text-align: center;
+  max-width: calc(100% - 30vw);
+  -ms-flex: 0 0 calc(100% - 30vw);
+      flex: 0 0 calc(100% - 30vw);
+}
+
+.oops__title {
+  font: 6.0556rem/6.6111rem 'Yeseva One', sans-serif;
+  color: #e7b66b;
+  margin-bottom: 0;
+}
+
+.oops__subtitle {
+  font-size: 1.0778rem;
+  line-height: 1.6333rem;
+  margin-bottom: 2.2444rem;
+}
+
+.oops__img {
+  position: absolute;
+  bottom: 0;
+  margin-right: -48vw;
+  right: 50%;
+  height: 68vw;
+  z-index: 3;
+  max-height: 1090px;
+}
+
+.oops__img:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #161214 0%, rgba(22, 18, 20, 0) 10%);
+}
+
+.oops__img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #161214 0%, rgba(22, 18, 20, 0) 20%);
+}
+
 /*
 Ширины экрана
 -- xs	320-499		Смартфоны
@@ -1972,6 +2064,35 @@ h2 span {
     margin-right: -52vw;
     bottom: 0;
   }
+
+  .oops__holder {
+    padding-bottom: 0;
+  }
+
+  .oops__holder {
+    height: 100vh;
+  }
+
+  .oops__content {
+    max-width: calc(100% - 40vw);
+    -ms-flex: 0 0 calc(100% - 40vw);
+        flex: 0 0 calc(100% - 40vw);
+  }
+
+  .oops__title {
+    font-size: 8.0556rem;
+    line-height: 8.6111rem;
+  }
+
+  .oops__subtitle {
+    font-size: 1.2778rem;
+    line-height: 1.8333rem;
+    margin-bottom: 2.8444rem;
+  }
+
+  .oops__img {
+    margin-right: -35vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2148,11 +2269,6 @@ h2 span {
     display: block;
   }
 
-  .thanks__holder:before {
-    top: 0;
-    bottom: auto;
-  }
-
   .thanks__subtitle {
     font-size: 1.7778rem;
     line-height: 2.3333rem;
@@ -2160,6 +2276,22 @@ h2 span {
 
   .thanks__img {
     bottom: -10rem;
+  }
+
+  .oops__title {
+    font-size: 12.0556rem;
+    line-height: 12.6111rem;
+  }
+
+  .oops__subtitle {
+    font-size: 1.7778rem;
+    line-height: 2.3333rem;
+    margin-bottom: 3.4444rem;
+  }
+
+  .oops__img {
+    bottom: -10rem;
+    height: 72vw;
   }
 }
 
@@ -2215,6 +2347,14 @@ h2 span {
   .thanks {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .oops__holder {
+    padding-top: 0;
+  }
+
+  .oops__img {
+    height: 65vw;
   }
 }
 
@@ -2272,6 +2412,14 @@ h2 span {
   }
 
   .thanks__img {
+    height: 54vw;
+  }
+
+  .oops__holder {
+    max-height: 560px;
+  }
+
+  .oops__img {
     height: 54vw;
   }
 }
@@ -2352,6 +2500,20 @@ h2 span {
   }
 
   .thanks__img {
+    height: 68vw;
+  }
+
+  .oops__holder {
+    max-height: 100%;
+  }
+
+  .oops__content {
+    max-width: 86%;
+    -ms-flex: 0 0 86%;
+        flex: 0 0 86%;
+  }
+
+  .oops__img {
     height: 68vw;
   }
 }
