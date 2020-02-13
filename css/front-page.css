@@ -696,22 +696,34 @@ h2 span {
 .catalog:before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -9.7778rem;
   width: 9.7778rem;
   height: 19.5556rem;
   top: 24.7778rem;
   background: url(../i/catalog/2.jpg) no-repeat;
+  transition: 1.5s;
 }
 
 .catalog:after {
   content: '';
   position: absolute;
-  right: -50px;
+  right: -9.2222rem;
   width: 9.2222rem;
   height: 9.2889rem;
   top: 4.7778rem;
   background: url(../i/catalog/3.png) no-repeat;
   z-index: 4;
+  transform: rotate(20deg);
+  transition: 1.3s;
+}
+
+.catalog.anim-section_active:before {
+  left: 0;
+}
+
+.catalog.anim-section_active:after {
+  right: -50px;
+  transform: rotate(0deg);
 }
 
 .catalog__item {
@@ -918,8 +930,15 @@ h2 span {
 
 .catalog-form__illustr1 img {
   position: absolute;
-  right: -320px;
+  right: -380px;
   top: -280px;
+  transform: rotate(20deg);
+  transition: 1s;
+}
+
+.catalog-form.anim-section_active .catalog-form__illustr1 img {
+  transform: rotate(0deg);
+  right: -320px;
 }
 
 .catalog-form__illustr2 img {
@@ -929,10 +948,17 @@ h2 span {
 }
 
 .catalog-form_right .catalog-form__illustr1 img {
-  left: -320px;
   right: auto;
+  left: -420px;
   top: -320px;
   transform: scale(-1, 1);
+  opacity: 0;
+  transition: opacity 1s, left 1s;
+}
+
+.catalog-form.anim-section_active.catalog-form_right .catalog-form__illustr1 img {
+  opacity: 1;
+  left: -320px;
 }
 
 .catalog-form_right .catalog-form__illustr2 img {
@@ -1163,11 +1189,20 @@ h2 span {
   content: '';
   position: absolute;
   top: 30px;
-  left: 85%;
+  left: 100%;
   background: url(../i/description/2.png) no-repeat;
   width: 143px;
   height: 116px;
   z-index: 3;
+  transform: rotate(20deg);
+  opacity: 0;
+  transition: 1.3s;
+}
+
+.description.anim-section_active .description__holder:before {
+  left: 85%;
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
 .description h2 {
@@ -1211,12 +1246,20 @@ h2 span {
   content: '';
   position: absolute;
   top: 20px;
-  right: 90%;
+  right: 100%;
   background: url(../i/description/2.png) no-repeat;
   width: 143px;
   height: 116px;
   z-index: 3;
-  transform: scale(-1, 1);
+  opacity: 0;
+  transform: scale(-1, 1) rotate(20deg);
+  transition: 1.3s;
+}
+
+.top.anim-section_active .top__wrap:before {
+  transform: scale(-1, 1) rotate(0deg);
+  right: 90%;
+  opacity: 1;
 }
 
 .top .row {
@@ -1294,14 +1337,22 @@ h2 span {
   content: '';
   position: absolute;
   top: -150px;
-  right: 85%;
+  right: 100%;
   background: url(../i/form/5.png) no-repeat;
   background-size: cover;
   width: 686px;
   height: 690px;
   z-index: 3;
-  transform: scale(-1, 1);
+  opacity: 0;
+  transform: scale(-1, 1) rotate(20deg);
   pointer-events: none;
+  transition: 1.3s;
+}
+
+.catalog-form2.anim-section_active .catalog-form2__holder:before {
+  right: 85%;
+  opacity: 1;
+  transform: scale(-1, 1) rotate(0deg);
 }
 
 .catalog-form2 h2 {
@@ -1413,26 +1464,44 @@ h2 span {
   content: '';
   position: absolute;
   top: -50px;
-  right: 95%;
+  right: 100%;
   background: url(../i/steps/4.png) no-repeat;
   background-size: cover;
   width: 198px;
   height: 203px;
   z-index: 3;
   pointer-events: none;
+  opacity: 0;
+  transform: rotate(-20deg);
+  transition: 1.3s;
 }
 
 .steps h2 span:after {
   content: '';
   position: absolute;
   top: -30px;
-  left: 95%;
+  left: 100%;
   background: url(../i/steps/5.png) no-repeat;
   background-size: cover;
   width: 58px;
   height: 53px;
   z-index: 3;
   pointer-events: none;
+  opacity: 0;
+  transform: rotate(20deg);
+  transition: 1.3s;
+}
+
+.steps.anim-section_active h2 span:before {
+  right: 95%;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.steps.anim-section_active h2 span:after {
+  left: 95%;
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
 .steps__illustr {
@@ -1450,8 +1519,10 @@ h2 span {
   background: url(../i/steps/6.png) no-repeat;
   width: 278px;
   height: 273px;
-  right: 92%;
+  right: 100%;
   bottom: 25%;
+  opacity: 0;
+  transition: 1.3s;
 }
 
 .steps__illustr:after {
@@ -1460,8 +1531,20 @@ h2 span {
   background: url(../i/steps/7.png) no-repeat;
   width: 359px;
   height: 375px;
-  left: 92%;
+  left: 100%;
   top: 8%;
+  opacity: 0;
+  transition: 1.3s;
+}
+
+.steps.anim-section_active .steps__illustr:before {
+  right: 92%;
+  opacity: 1;
+}
+
+.steps.anim-section_active .steps__illustr:after {
+  left: 92%;
+  opacity: 1;
 }
 
 .steps__holder {
@@ -1548,26 +1631,44 @@ h2 span {
   content: '';
   position: absolute;
   top: -20px;
-  right: 90%;
+  right: 100%;
   background: url(../i/requirements/7.png) no-repeat;
   background-size: cover;
   width: 353px;
   height: 268px;
   z-index: 3;
   pointer-events: none;
+  transition: 1s;
+  transform: rotate(-20deg);
+  opacity: 0;
 }
 
 .requirements__title span:after {
   content: '';
   position: absolute;
   top: -20px;
-  left: 90%;
+  left: 100%;
   background: url(../i/requirements/8.png) no-repeat;
   background-size: cover;
   width: 282px;
   height: 250px;
   z-index: 3;
   pointer-events: none;
+  transition: 1s;
+  transform: rotate(20deg);
+  opacity: 0;
+}
+
+.requirements.anim-section_active .requirements__title span:before {
+  right: 90%;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.requirements.anim-section_active .requirements__title span:after {
+  left: 90%;
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 .requirements__subtitle {
@@ -2245,11 +2346,11 @@ h2 span {
     bottom: auto;
   }
 
-  .requirements__title span:before {
+  .requirements.anim-section_active .requirements__title span:before {
     right: 80%;
   }
 
-  .requirements__title span:after {
+  .requirements.anim-section_active .requirements__title span:after {
     left: 80%;
   }
 
@@ -2392,7 +2493,7 @@ h2 span {
     padding: 1.4333rem;
   }
 
-  .catalog:after {
+  .catalog.anim-section_active:after {
     right: -20px;
   }
 
@@ -2400,11 +2501,11 @@ h2 span {
     width: 80vw;
   }
 
-  .steps h2 span:before {
+  .steps.anim-section_active h2 span:before {
     right: 80%;
   }
 
-  .steps h2 span:after {
+  .steps.anim-section_active h2 span:after {
     left: 80%;
   }
 

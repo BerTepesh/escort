@@ -424,10 +424,20 @@ $(function () {
 
 
 });
+let setProgress = function() {
+  $(".anim-section").each(function(){
+    let section = $(this).offset().top;
+    let viewSpot = $(window).scrollTop() + $(window).height()/1.3;
+    if(viewSpot > section) {
+      $(this).addClass("anim-section_active");
+    }
+  })
+};
 $(document).ready(function() {
   if($(window).scrollTop() > 0) {
     $(".scrolldown").removeClass("active");
   }
+  setProgress();
 });
 $(window).scroll(function() {
   if($(window).scrollTop() > 0) {
@@ -435,6 +445,7 @@ $(window).scroll(function() {
   } else {
     $(".scrolldown").addClass("active");
   }
+  setProgress();
 });
 $(".ham-menu-trigger").click(function() {
   $(".ham-menu").toggleClass("active");
